@@ -1,0 +1,485 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background:0 8px 20px rgba(118, 179, 233, 0.3);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* =========================
+   TOP NAVIGATION BAR
+   ========================= */
+.top-nav {
+    background-color: #257fc9;
+    width: 100%;
+    padding: 16px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo text */
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0a0a0a;
+}
+
+/* Navigation links */
+.menu a {
+    margin-left: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Account dropdown */
+.menu select {
+    margin-left: 18px;
+    padding: 6px;
+    background:#2660a3;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Logged user text */
+.user-text {
+    color: #ddd;
+    margin-right: 12px;
+}
+
+/* =========================
+   HERO SECTION
+   ========================= */
+.hero {
+    position: relative;
+    height: 350px;
+    background: url('https://cdn.pixabay.com/photo/2016/11/29/04/15/meeting-1869814_1280.jpg')
+                center / cover no-repeat;
+}
+
+/* Dark overlay on hero */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(4, 151, 231, 0.5);
+}
+
+/* Hero text content */
+.hero-content {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: #fbf9f9;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+/* =========================
+   MAIN CONTAINER
+   ========================= */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background: rgba(8, 90, 134, 0.5);
+
+}
+
+/* Section headings */
+.section-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #114b8c;
+    
+}
+
+/*CARD GRID*/
+.card-grid {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* Card images */
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* CATEGORIES */
+.categories {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.categories span {
+    background: #e6eef8;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #114b8c;
+    font-weight: 600;
+}
+
+/*HEADER & NAV (SECOND LAYOUT) */
+.header h1 {
+    margin: 0;
+    font-size: 20px;
+    color: #114b8c;
+}
+
+/* Navigation links */
+.nav a {
+    margin-left: 12px;
+    text-decoration: none;
+    color: #114b8c;
+    font-weight: 600;
+}
+
+/* Navigation dropdown */
+.nav select {
+    margin-left: 4px;
+    color: #27d921;
+    font-weight: 200;
+}
+
+/* =========================
+   FORMS
+   ========================= */
+.form-row {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #394c6b;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #e6eef8;
+}
+
+/* Buttons */
+button {
+    background: #1e88e5;
+    color: #fff;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-muted {
+    background: #e6eef8;
+    color: #114b8c;
+}
+
+/* =========================
+   UTILITIES
+   ========================= */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 20px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    padding: 12px;
+    border-bottom: 1px dashed #eef6ff;
+}
+
+.small {
+    font-size: 13px;
+    color: #6b7a90;
+}
+
+.notice {
+    background: #ecfdf5;
+    border-left: 4px solid #34d399;
+    padding: 10px;
+    border-radius: 6px;
+    color: #064e3b;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #eef6ff;
+    text-align: left;
+}
+
+.flex {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/*about page*/
+.about-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
+.about-container h3 {
+    margin-top: 25px;
+    color: #114b8c;
+}
+
+.advantages {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.advantages li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.login-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background: rgba(100, 200, 254, 0.5);
+
+}
+
+
+/* =========================
+   LOGIN PAGE DESIGN
+   ========================= */
+
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #114b8c, #76b3e9);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 30px 28px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.login-card h2 {
+    text-align: center;
+    color: #114b8c;
+    margin-bottom: 5px;
+}
+
+.login-sub {
+    text-align: center;
+    font-size: 14px;
+    color: #6b7a90;
+    margin-bottom: 20px;
+}
+
+.login-card label {
+    font-weight: 600;
+    color: #114b8c;
+}
+
+.login-card input,
+.login-card select {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #cddff3;
+    transition: 0.3s;
+}
+
+.login-card input:focus,
+.login-card select:focus {
+    outline: none;
+    border-color: #1e88e5;
+    box-shadow: 0 0 0 2px rgba(30,136,229,0.2);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #1e88e5, #114b8c);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    opacity: 0.95;
+}
+
+.login-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-footer p {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.login-footer a {
+    color: #1e88e5;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+/* =========================
+   COMPANY SIGNUP PAGE DESIGN
+   ========================= */
+
+.container {
+    background:none;/* remove old dark background for signup */
+
+
+}
+
+.card {
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 16px;
+    box-shadow: 0 14px 35px rgba(0,0,0,0.15);
+    
+}
+
+.card h2 {
+    text-align: center;
+    color: #114b8c;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+/* Form spacing */
+.card .form-row {
+    margin-bottom: 12px;
+}
+
+/* Labels */
+.card label {
+    font-weight: 60;
+    color: #114b8c;
+    font-size: 14px;
+}
+
+/* Inputs & Select */
+.card input,
+.card select {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #cddff3;
+    font-size: 14px;
+    background: #f9fbff;
+}
+
+/* Focus effect */
+.card input:focus,
+.card select:focus {
+    outline: none;
+    border-color: #1e88e5;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(30,136,229,0.15);
+}
+
+/* Signup button */
+.card button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #1e88e5, #114b8c);
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(30,136,229,0.35);
+}
+
+/* Bottom text */
+.card .small {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.card .small a {
+    color: #1e88e5;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.card .small a:hover {
+    text-decoration: underline;
+}
+
+/* Success & error notice alignment */
+.notice {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
